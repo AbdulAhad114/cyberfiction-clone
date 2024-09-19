@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#section{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position: relative;
+}
+#section1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position: relative;
+}
+#section2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position: relative;
+}
+#section3{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+}
+canvas{
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    z-index: 9;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 34%;
+    font-size: 100px;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    white-space: nowrap;
+}
+#loop h1{
+    font-weight: 400;
+    animation-name: animate;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.6px #000;
+    color: transparent;
+    font-weight: 500;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+nav{
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    padding: 0px 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav>h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+#section>h3{
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #7c7c7c;
+    margin-right: 58%;
+}
+#section>h4{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.left-text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.left-text>h3{
+    font-size: 22px;
+    font-weight: 500;
+    color: #7c7c7c;
+}
+.left-text>h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #000;
+}
+#section1>#right-text{
+    position: absolute;
+    top: 43%;
+    right: 10%;
+    text-align: end;
+}
+#section1>#right-text>h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+#section1>#right-text>h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #000;
+}
+
+#section2>#right-text1{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-align: end;
+}
+#section2>#right-text1>h3{
+    font-size: 19px;
+    font-weight: 500;
+    color: #7c7c7c;
+}
+
+#section3>#left-text2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+#section3>#left-text2>h3{
+    font-size: 19px;
+    font-weight: 500;
+    color: #7c7c7c;
+}
+#section3>#right-text2{
+    position: absolute;
+    top: 56%;
+    right: 10%;
+    text-align: end;
+}
+#section3>#right-text2>h3{
+    font-size: 19px;
+    font-weight: 500;
+    color: #7c7c7c;
+}
+#section3>#right-text2>h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #000;
+}
